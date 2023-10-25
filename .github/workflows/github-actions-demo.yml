@@ -1,0 +1,11 @@
+name: GitHub Actions Demo
+run-name: Run Dastardly scan
+on: [push]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run Dastardly Action Step
+        uses: PortSwigger/dastardly-github-action@main
+        with:
+          target-url: 'https://github.com/gendian/snyk-demo/wiki'
